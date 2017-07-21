@@ -15,6 +15,8 @@
 		FD6EE4B01EFD0E1600184824 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD6EE4AE1EFD0E1600184824 /* LaunchScreen.storyboard */; };
 		FD6EE4BB1EFD0E1600184824 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6EE4BA1EFD0E1600184824 /* ____Tests.m */; };
 		FD6EE4C61EFD0E1600184824 /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6EE4C51EFD0E1600184824 /* ____UITests.m */; };
+		FDD2CEF71EFE3E90009AF89A /* ljbapp.plist in Resources */ = {isa = PBXBuildFile; fileRef = FDD2CEF61EFE3E90009AF89A /* ljbapp.plist */; };
+		FDD2CEFA1EFE40F0009AF89A /* ljbQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD2CEF91EFE40F0009AF89A /* ljbQuestion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		FD6EE4C11EFD0E1600184824 /* 超级猜图UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "超级猜图UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD6EE4C51EFD0E1600184824 /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
 		FD6EE4C71EFD0E1600184824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDD2CEF61EFE3E90009AF89A /* ljbapp.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ljbapp.plist; path = ../ljbapp.plist; sourceTree = "<group>"; };
+		FDD2CEF81EFE40F0009AF89A /* ljbQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ljbQuestion.h; sourceTree = "<group>"; };
+		FDD2CEF91EFE40F0009AF89A /* ljbQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ljbQuestion.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +106,10 @@
 		FD6EE49F1EFD0E1600184824 /* 超级猜图 */ = {
 			isa = PBXGroup;
 			children = (
-				FD6EE4A31EFD0E1600184824 /* AppDelegate.h */,
-				FD6EE4A41EFD0E1600184824 /* AppDelegate.m */,
-				FD6EE4A61EFD0E1600184824 /* ViewController.h */,
-				FD6EE4A71EFD0E1600184824 /* ViewController.m */,
-				FD6EE4A91EFD0E1600184824 /* Main.storyboard */,
-				FD6EE4AC1EFD0E1600184824 /* Assets.xcassets */,
-				FD6EE4AE1EFD0E1600184824 /* LaunchScreen.storyboard */,
-				FD6EE4B11EFD0E1600184824 /* Info.plist */,
+				FD6EE4D61EFD0ECD00184824 /* controllers */,
+				FD6EE4D51EFD0EC000184824 /* othwes */,
+				FD6EE4D41EFD0EB800184824 /* views */,
+				FD6EE4D31EFD0EA200184824 /* model */,
 				FD6EE4A01EFD0E1600184824 /* Supporting Files */,
 			);
 			path = "超级猜图";
@@ -117,6 +118,9 @@
 		FD6EE4A01EFD0E1600184824 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FDD2CEF61EFE3E90009AF89A /* ljbapp.plist */,
+				FD6EE4AC1EFD0E1600184824 /* Assets.xcassets */,
+				FD6EE4B11EFD0E1600184824 /* Info.plist */,
 				FD6EE4A11EFD0E1600184824 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +142,42 @@
 				FD6EE4C71EFD0E1600184824 /* Info.plist */,
 			);
 			path = "超级猜图UITests";
+			sourceTree = "<group>";
+		};
+		FD6EE4D31EFD0EA200184824 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FDD2CEF81EFE40F0009AF89A /* ljbQuestion.h */,
+				FDD2CEF91EFE40F0009AF89A /* ljbQuestion.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		FD6EE4D41EFD0EB800184824 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				FD6EE4A91EFD0E1600184824 /* Main.storyboard */,
+				FD6EE4AE1EFD0E1600184824 /* LaunchScreen.storyboard */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		FD6EE4D51EFD0EC000184824 /* othwes */ = {
+			isa = PBXGroup;
+			children = (
+				FD6EE4A31EFD0E1600184824 /* AppDelegate.h */,
+				FD6EE4A41EFD0E1600184824 /* AppDelegate.m */,
+			);
+			name = othwes;
+			sourceTree = "<group>";
+		};
+		FD6EE4D61EFD0ECD00184824 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FD6EE4A61EFD0E1600184824 /* ViewController.h */,
+				FD6EE4A71EFD0E1600184824 /* ViewController.m */,
+			);
+			name = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +242,7 @@
 		FD6EE4951EFD0E1600184824 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ljb;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "李建兵";
 				TargetAttributes = {
@@ -248,6 +289,7 @@
 			files = (
 				FD6EE4B01EFD0E1600184824 /* LaunchScreen.storyboard in Resources */,
 				FD6EE4AD1EFD0E1600184824 /* Assets.xcassets in Resources */,
+				FDD2CEF71EFE3E90009AF89A /* ljbapp.plist in Resources */,
 				FD6EE4AB1EFD0E1600184824 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDD2CEFA1EFE40F0009AF89A /* ljbQuestion.m in Sources */,
 				FD6EE4A81EFD0E1600184824 /* ViewController.m in Sources */,
 				FD6EE4A51EFD0E1600184824 /* AppDelegate.m in Sources */,
 				FD6EE4A21EFD0E1600184824 /* main.m in Sources */,
@@ -507,6 +550,7 @@
 				FD6EE4CC1EFD0E1600184824 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD6EE4CD1EFD0E1600184824 /* Build configuration list for PBXNativeTarget "超级猜图Tests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +559,7 @@
 				FD6EE4CF1EFD0E1600184824 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD6EE4D01EFD0E1600184824 /* Build configuration list for PBXNativeTarget "超级猜图UITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +568,7 @@
 				FD6EE4D21EFD0E1600184824 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
